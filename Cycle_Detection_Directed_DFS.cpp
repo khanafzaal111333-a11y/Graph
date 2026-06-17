@@ -22,9 +22,10 @@ class graph{
     }
     bool DFS(vector<bool>&vis,vector<bool>&dir,int u){
         vis[u]=true;
+        dir[u]=true;
         for(auto it:l[u]){
             if(!vis[it]){
-                if(DFS(vis,dir,u))return true;
+                if(DFS(vis,dir,it))return true;
             }
             else if(dir[u]){
                 return true;
