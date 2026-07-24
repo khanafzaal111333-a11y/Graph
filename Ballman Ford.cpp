@@ -30,9 +30,9 @@ void Ballman(int src,vector<vector<Edge>>g,int v){
 int main(){
    vector<vector<Edge>>g(3);
    //Balman fails here
-   g[0].push_back({-1,1});
+   g[0].push_back({1,1});
    g[1].push_back({-2,2});
-   g[2].push_back({-2,0});
+   g[2].push_back({2,0});
    Ballman(0,g,3);
 }
 
